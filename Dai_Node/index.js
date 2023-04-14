@@ -12,19 +12,21 @@ console.log(`Textos de Entrada: "${textoEntrada01}" y "${textoEntrada02}"`);
 
 console.log(`Texto de Salida: "${textoSalida}"`);
 
+import { PI, sumar, restar, multiplicar, dividir } from './matematica.js';
 
+console.log('El valor de PI es:', PI);
 
-/*const fs = require ('fs')
+console.log('La suma de 5 y 3 es:', sumar(5, 3));
+console.log('La resta de 10 y 4 es:', restar(10, 4));
+console.log('El producto de 6 y 2 es:', multiplicar(6, 2));
+console.log('La división de 8 entre 2 es:', dividir(8, 2));
 
-fs.writeFile('./prueba1.txt','Linea1\nLinea 2\n', error =>{
-    if (error) {
-       console.log("Error",error)  
-    }
-    else
-    {
-        console.log("archivo creado")
-    }
-}
+import Alumno from './alumno.js';
 
-)
-console.log("Ultima? linea")*/
+const alumno1 = new Alumno('Thiago', '46876761');
+const alumno2 = new Alumno('Santino', '47031761');
+
+alumno1.mostrar();
+alumno2.mostrar();
+
+copiar('./entrada.txt', './salida.txt');
