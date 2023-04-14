@@ -29,4 +29,5 @@ const alumno2 = new Alumno('Santino', '47031761');
 alumno1.mostrar();
 alumno2.mostrar();
 
+import { copiar } from './Ej04.js';
 copiar('./entrada.txt', './salida.txt');

@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-function copiar(archivoOrigen, archivoDestino) {
+export function copiar(archivoOrigen, archivoDestino) {
   fs.readFile(archivoOrigen, 'utf-8', (error, datos) => {
     if (error) {
       console.error('Error al leer el archivo:', error);
