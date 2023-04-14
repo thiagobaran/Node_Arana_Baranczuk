@@ -31,3 +31,18 @@ alumno2.mostrar();
 
 import { copiar } from './Ej04.js';
 copiar('./entrada.txt', './salida.txt');
+
+import { obtenerMoneda } from './Ej07.js';
+let monedaDelPais, codigoPais;
+
+codigoPais = 'AR';
+
+monedaDelPais = obtenerMoneda(codigoPais);
+
+console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
+
+codigoPais = 'UZA';
+
+monedaDelPais = obtenerMoneda(codigoPais);
+
+console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
